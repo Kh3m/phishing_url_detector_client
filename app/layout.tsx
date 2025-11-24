@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import TopNav from "./components/Navigations/TopNav";
+import Wrapper from "./components/Wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +30,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <TopNav />
+        <main>{children}</main>
+
+        <footer className=" ">
+          <Wrapper>
+            <div className=" mx-auto py-6 text-sm text-gray-600 flex items-center justify-between">
+              <p>
+                © {new Date().getFullYear()} PhishAware. Built with Love to make
+                the web safer.
+              </p>
+              <p>
+                <span>Made by</span> <strong>Adamu A.</strong>,{" "}
+                <span>Ahmad T. A.</span>, <span>Sabo A. I.</span>
+              </p>
+            </div>
+          </Wrapper>
+        </footer>
       </body>
     </html>
   );

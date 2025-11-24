@@ -1,10 +1,10 @@
-import PhishingAwarenessApp from "./pages/HomePage";
-import HomePage from "./pages/HomePage";
+import PhishingGuide from "./components/Phishing/PhishingGuide";
+import PhishingQuiz from "./components/Phishing/PhishingQuiz";
 
 export default function Home() {
   return (
     <section>
-      <PhishingAwarenessApp />
+      <PhishingGuide />
     </section>
   );
 }
