@@ -35,14 +35,18 @@ export default function RootLayout({
 
         <footer className=" ">
           <Wrapper>
-            <div className=" mx-auto py-6 text-sm text-gray-600 flex items-center justify-between">
+            <div
+              className=" mx-auto py-6 text-sm text-gray-600 flex items-center justify-between
+              lg:flex-col"
+            >
               <p>
                 © {new Date().getFullYear()} PhishAware. Built with Love to make
                 the web safer.
               </p>
               <p>
-                <span>Made by</span> <strong>Adamu A.</strong>,{" "}
-                <span>Ahmad T. A.</span>, <span>Sabo A. I.</span>
+                <span>Made by</span> <strong>Abdulkareem Adamu</strong>,{" "}
+                <span>Tijjani Adam Ahmad</span>,{" "}
+                <span>Abdurrahaman Imran Sabo</span>
               </p>
             </div>
           </Wrapper>
