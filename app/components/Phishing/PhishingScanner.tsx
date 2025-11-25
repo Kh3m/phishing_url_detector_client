@@ -47,7 +47,10 @@ const PhishingScanner = () => {
           ML-powered phishing detector.
         </p>
 
-        <div className="flex gap-3">
+        <div
+          className="flex gap-3
+        lg:flex-col"
+        >
           <input
             value={url}
             onChange={(e) => setUrl(e.target.value)}
