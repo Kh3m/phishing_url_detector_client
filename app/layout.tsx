@@ -36,8 +36,8 @@ export default function RootLayout({
         <footer className=" ">
           <Wrapper>
             <div
-              className=" mx-auto py-6 text-sm text-gray-600 flex items-center justify-between
-              lg:flex-col"
+              className=" mx-auto py-6 text-sm text-gray-600 flex items-center justify-between flex-col
+              lg:flex-row"
             >
               <p>
                 © {new Date().getFullYear()} PhishAware. Built with Love to make

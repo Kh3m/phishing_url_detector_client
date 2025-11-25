@@ -48,8 +48,8 @@ const PhishingScanner = () => {
         </p>
 
         <div
-          className="flex gap-3
-        lg:flex-col"
+          className="flex gap-3 flex-col
+        lg:flex-row"
         >
           <input
             value={url}
