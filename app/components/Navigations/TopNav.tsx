@@ -5,7 +5,7 @@ import { useState } from "react";
 import phishawareLogo from "@/app/favicon.ico";
 import Link from "next/link";
 import Wrapper from "../Wrapper";
-import { HiMenu, HiX } from "react-icons/hi"; // Heroicons for menu icon
+import { HiMenu, HiX } from "react-icons/hi";
 
 const TopNav = () => {
   const [isOpen, setIsOpen] = useState(false);
